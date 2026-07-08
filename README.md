@@ -66,14 +66,15 @@ Same RD-03D wiring as the standalone single-sensor build:
 
 
 ## Bill of materials (transmitter)
-
 | Qty | Part |
-| 1   | Seeed Studio XIAO ESP32-S3 |
-| 1   | RD-03D radar module (Ai-Thinker) |
-| 1   | Toggle switch |
-| 1   | MT3608 step-up converter, set to 5V |
-| 1   | 3.7V LiPo battery (capacity to taste — smaller if the node needs to stay compact) |
-| —   | Wires, enclosure, glue/tape as needed |
+|---|---|
+| 1 | Seeed Studio XIAO ESP32-S3 |
+| 1 | RD-03D radar module (Ai-Thinker) |
+| 1 | Toggle switch |
+| 1 | MT3608 step-up converter, set to 5V |
+| 1 | BT4056 usbc charging module
+| 1 | 3.7V LiPo battery (capacity to taste — smaller if the node needs to stay compact) |
+| — | Wires, enclosure, glue/tape as needed |
 
 ## Receiver (uConsole)
 
