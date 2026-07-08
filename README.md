@@ -1,3 +1,11 @@
+
+A second, standalone output path for this project — instead of an Arduino GIGA R1 +
+Display Shield, the radar feed is displayed and sonified on a Clockwork Pi uConsole
+(or any Linux machine with Wi-Fi and audio output).
+
+<img width="914" height="1449" alt="image0" src="https://github.com/user-attachments/assets/03a46720-a32d-4d95-b291-ce5e7e8bc09f" />
+
+
 ## Safety & disclaimer
 
 ----------------------------------------------------------------------------------------------
@@ -22,18 +30,6 @@ A few things to know before you do:
 If you spot an error in the docs, wiring, or code, please open an issue — corrections
 are welcome.
 ----------------------------------------------------------------------------------------------
-
-A second, standalone output path for this project — instead of an Arduino GIGA R1 +
-Display Shield, the radar feed is displayed and sonified on a Clockwork Pi uConsole
-(or any Linux machine with Wi-Fi and audio output).
-
-## Why
-
-The GIGA setup is limited to whatever `Arduino_GigaDisplay_GFX` and a passive piezo
-buzzer can do — square-wave tones only, no volume control, no real audio synthesis.
-Moving the display/audio side to a small Linux machine removes those constraints:
-real sample-based sound, easier iteration (no flash cycle for UI tweaks), and no
-extra display hardware needed beyond what the machine already has.
 
 ## Architecture
 
