@@ -29,7 +29,11 @@ import pygame
 UDP_PORT = 4210
 MAX_TARGETS = 3
 MAGIC = 0xD03DA7A
-PACKET_FMT = "<II" + "hhhB" * MAX_TARGETS
+# Pro Ziel 8 Byte: int16 x, int16 y, int16 spd, uint8 valid + 1 Füllbyte. Die
+# C-Struktur "Target" im XIAO-Sketch ist nicht gepackt, der Compiler rundet sie
+# auf 8 Byte auf; das Paket ist daher 4+4+3*8 = 32 Byte. Mit "hhhB" (7 Byte, 29
+# gesamt) wurden Ziel 2 und 3 um ein bzw. zwei Byte versetzt gelesen -> Müllwerte.
+PACKET_FMT = "<II" + "hhhBx" * MAX_TARGETS
 PACKET_SIZE = struct.calcsize(PACKET_FMT)
 
 # ── Display ──
