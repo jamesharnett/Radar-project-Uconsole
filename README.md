@@ -59,7 +59,7 @@ Same RD-03D wiring as the standalone single-sensor build:
 |---|---|
 | TX | D0 (GPIO1, UART1 RX) |
 | RX | D1 (GPIO2, UART1 TX) |
-| VCC | 5V |
+| BAT+ | 3,7V |
 | GND | GND |
 
 <img width="738" height="594" alt="Transmitter build" src="https://github.com/user-attachments/assets/651c39b9-d1e9-4499-87b4-0992acb2ea30" />
